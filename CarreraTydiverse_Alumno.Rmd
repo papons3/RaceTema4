@@ -294,7 +294,7 @@ select(cran, ip_id, country, package, size)%>%
 26. Añade una columna llamada `size_mb` que contenga el tamaño de cada descarga en megabytes.
 
 ```{r}
-
+mutate(cran,size_mb=size/(2^20))
 
 
 ```
